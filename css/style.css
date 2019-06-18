@@ -32,7 +32,6 @@ p {
 
 /* Container */
 .container {
-    display: flex;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -83,7 +82,7 @@ p {
 
 /* Intro */
 .intro {
-    background: url('img/bg__header.jpg') no-repeat center;
+    background: url('../img/bg__header.jpg') no-repeat center;
     background-size: cover;
     height: 730px;
     width: 100%;
@@ -108,6 +107,12 @@ h1.intro__title {
 
 h2.intro__title {
     margin-bottom: 46px;
+}
+
+.intro__text {
+    color: #9dc7d1;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /* Btn */
@@ -204,9 +209,15 @@ h3 {
 /* Onec */
 .onec {
     background-color: #f2f9fe;
+    height: 820px;
+}
+
+.onec__item {
+    display: flex;
 }
 
 .onec__block {
+    position: relative;
     width: 50%;
     height: 100%;
     text-align: start;
@@ -219,6 +230,19 @@ h3 {
 .onec__block_img {
     margin: 62px 0;
     float: right;
+}
+
+.img__block-2 {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.img__block-3 {
+    left: 194px;
+    z-index: 2;
 }
 
 .onec__title {
@@ -240,6 +264,12 @@ h3 {
     left: 0;
     bottom: -19px;
     z-index: 1;
+}
+
+.onec__text {
+    color: #8c9494;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .onec__sup_title {
@@ -277,4 +307,162 @@ h3 {
     font-size: 14px;
     font-weight: 400;
     margin: 47px auto 125px;
+}
+
+/* Reviews */
+.reviews__block {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title__reviews {
+    margin: 104px 0 38px;
+}
+
+.reviews__text {
+    margin: 47px 0 27px;
+    color: #8c9494;
+    font-family: "Droid Serif";
+    font-size: 24px;
+    font-style: italic;
+}
+
+.reviews__text-name {
+    color: #5dca88;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 39px;
+}
+
+.reviews__slider {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__slider-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #8c9494;
+    margin: 0 5px 113px;
+}
+
+.circle-active {
+    background-color: #5dca88;
+}
+
+/* News */
+.news {
+    background-color: #f3f5f5;
+}
+
+.news__block {
+    display: flex;
+    flex-direction: column;
+
+    padding: 94px 0 0 0;
+    width: 100%;
+}
+
+.news__img {
+    margin-right: 24px;
+}
+
+.news__title {
+    color: #8c9494;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.news__title-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.form__mail {
+    margin: 0 auto 120px;
+    width: 770px;
+    height: 60px;
+    border: 2px solid #bbc3c2;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.btn-mail {
+    position: absolute;
+    right: 204px;
+    top: -50px;
+    z-index: 1;
+    background-color: #5dca88;
+    border: 0;
+    height: 60px;
+    width: 170px;
+    padding: 18px 40px;
+}
+
+.news__form-mail {
+    position: relative;
+}
+
+.form__mail::-webkit-input-placeholder {
+    color: #8c9494;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .form__mail:-ms-input-placeholder {
+    color: #8c9494;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .form__mail::-ms-input-placeholder {
+    color: #8c9494;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .form__mail::placeholder {
+    color: #8c9494;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  input {
+    color: #8c9494;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 30px;
+  }
+
+/* footer */
+.footer {
+    height: 307px;
+    background-color: #2d312f;
+}
+
+.footer__block {
+    flex-direction: column;
+    padding: 75px 0 0 0;
+    margin: 0 auto;
+}
+
+.footer__title {
+    color: #8c9494;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #8c9494;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+.icon__footer {
+    margin: 0 8px 70px;
 }
